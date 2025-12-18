@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - BCA Student Portfolio</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <!-- <li><a href="#resume">Resume</a></li> -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>PRADEEP SINGH </h1>
+        <p class="tagline">BCA Student | Tech Enthusiast | Data Analyst</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image" id="profilePhoto" onclick="document.getElementById('photoInput').click()">
+                <span id="placeholder">👨‍💻</span>
+                <div class="upload-icon">📷</div>
+            </div>
+            <input type="file" id="photoInput" accept="image/*">
+            <div class="about-text">
+                <h3>Hello! I'm a BCA Student</h3>
+                <p>I am a BCA student passionate about technology, coding, and creating meaningful digital experiences. I love exploring how things work and turning complex ideas into simple, user-friendly solutions..</p>
+                <p>My journey in tech is driven by curiosity—whether it's learning new programming languages, designing clean interfaces, or building small projects that help me grow. I believe in consistency, creativity, and continuous improvement. Every project I work on teaches me something new and pushes me a step closer to becoming a better developer. Through this portfolio, I aim to showcase my skills, my dedication to learning, and my vision of building smart, efficient, and impactful digital products.”</p>
+                <p><strong>Education:</strong> BCA (Bachelor of Computer Applications)<br>
+                <strong>Location:</strong> MountAbu,Sirohi <br>
+                <strong>Interests:</strong> Ai, UI/UX Design, Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+                <p>Semantic markup, accessibility, SEO optimization</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+                <p>Flexbox, Grid, animations, responsive design</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+                <p>ES6+, DOM manipulation, async programming</p>
+            </div>
+            <div class="skill-card">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+                <p>OOP, data structures, algorithms</p>
+            </div>
+            <div class="skill-card">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+                <p>Basic programming, automation scripts</p>
+            </div>
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+                <p>Version control, collaboration, deployment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio showcasing my skills and projects with modern design and smooth animations.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📝</div>
+                <div class="project-content">
+                    <h3>To-Do List App</h3>
+                    <p>An interactive task management application with add, delete, and mark complete features using local storage.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">LocalStorage</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <h3>Simple Game</h3>
+                    <p>A fun browser-based game built with vanilla JavaScript demonstrating game logic and DOM manipulation.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Canvas</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="resume">
+    <h2>My Resume</h2>
+
+    <div class="resume-box">
+        <p>You can download my resume below:</p>
+
+        <!-- SAME DESIGN AS "Get In Touch" -->
+        <a href="resume.pdf" download class="cta-button">
+            Download CV
+        </a>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="from_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="submit-btn">Send Message</button>
+</form>
+
+            <div class="social-links">
+                <a href="https://github.com/singhpradeep92670-web" target="_blank"></a>
+            </a>
+            <a href="https://github.com/singhpradeep92670-web" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:8px; color:black;">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30" alt="GitHub">
+    <span id="git">GitHub</span>
+</a>
+
+
+ <a href="https://linkedin.com/in/pradeep-singh-7487762a6" target="_blank"></a>
+
+ <a href="https://linkedin.com/in/pradeep-singh-7487762a6" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:8px; color:#0A66C2;">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30" alt="LinkedIn">
+    <span>LinkedIn</span>
+</a>
+ 
+
+               
+</a>
+<a href="mailto:singhpradeep92670@gmail.com"></a>
+<a href="mailto:yourmail@gmail.com" target="_blank" style="text-decoration:none; display:flex; align-items:center; gap:8px; color:#D14836;">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="30" alt="Gmail">
+    <span>Gmail</span>
+</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pradeep. All rights reserved. Made with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+    <script src="script.js"></script>
+
+
+  
+
+    
+</body>
+</html>
